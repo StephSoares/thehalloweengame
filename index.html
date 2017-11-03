@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Freckle+Face" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./image/livre.png" />
+  </head>
+  <body>
+    <button data-action="reset" class="resetButton">Reset</button>
+    <section data-state="optionScreen" class="gameScreens hidden">
+      <div class="flex-container">
+          <img class="logo" src="./image/livre.png" alt="icon">
+      </div>
+      <div class="flex-container">
+        <div class="transition">
+          <h2 class="option">The Halloween Game</h2>
+        </div>
+      </div>
+      <div class="flex-container">
+        <h3 class="option1">Définissez la largeur et la longueur de votre plateau : </h3>
+      </div>
+      <div class="flex">
+        <label for="x">Nombres de cases sur l'axe X : </label>
+        <input id="x" type="number" name="x" value="10">
+        <label for="y">Nombres de cases sur l'axe Y : </label>
+        <input id="y" type="number" name="y" value="10">
+        <br>
+        <br>
+        <button data-action="startGame" class="start">Start</button>
+      </div>
+    </section>
+    <section data-state="playScreen" class="gameScreens hidden gameCenter"></section>
+    <section data-state="victory" class="gameScreens hidden gameCenter">
+      <div class="flex-contain victoire">
+        <img class="logo1" src="./image/portail.gif">
+        <h2 class="option">Bravo, tu as amené(e) JSON le fantôme chez lui !</h2>
+      </div>
+    </section>
+    <section data-state="defeat" class="gameScreens hidden gameCenter">
+      <div class="flex-contain defaite">
+        <img class="logo1" src="./image/zombieattaque.gif">
+        <h2 class="option">Dommage, JSON a été codé par les Zombies Geeks ! Tu as perdu !</h2>
+      </div>
+    </section>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</html>

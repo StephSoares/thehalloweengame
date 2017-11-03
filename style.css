@@ -1,0 +1,148 @@
+body {
+  margin:0;
+  background-image: url("./image/maison.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.gameScreens {
+  width: 70vw;
+  height: 70vh;
+  background-color: rgba(196, 192, 192, 0.2);
+  padding: 80px;
+}
+.gameCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+.resetButton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6C6A6A;
+  border: 3px solid #272727;
+  color: #930505;
+  font-family: 'Creepster', cursive;
+  padding: 11px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.flex {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Freckle Face', cursive;
+  color : white;
+}
+.flex input {
+  margin: 10px;
+}
+.flex label {
+  font-family: 'Creepster', cursive;
+  font-size: 25px;
+}
+.option {
+  font-size: 90px;
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  color: #930505;
+  margin: 0;
+}
+.option1 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  color: #930505;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.transition {
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+    min-width: 20px;
+    min-height: 20px;
+    opacity: 0;
+
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+.logo {
+  width: 135px;
+  float: left;
+
+}
+.flex input {
+  width: 5%;
+}
+.start {
+    background-color: #6C6A6A;
+    border: 3px solid #272727;
+    color: #930505;
+    font-family: 'Creepster', cursive;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.gameDiv {
+  height: 38px;
+  width: 38px;
+  border: 1px solid white;
+}
+
+.gameContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.victoire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.defaite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo1 {
+  width: 500px;
+}
